@@ -8,6 +8,8 @@ const bodyParser = require('body-parser');
 
 const app = express();  // accepts an array of reques handlers
 
+app.set('view engine','pug');
+app.set('views','views');
 
 const adminData = require('./routes/admin');  // importing Routes from admin & shop
 const shopRoutes = require('./routes/shop');
